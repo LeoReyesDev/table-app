@@ -1,0 +1,137 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  color: rgb(109, 109, 109);
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid #ededed;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table th,
+table td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  position: relative;
+}
+table th:last-child,
+table td:last-child {
+  border-right: 0;
+}
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table th::before {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+table th.sort-asc::before {
+  border-bottom: 5px solid #22543d;
+}
+table th.sort-desc::before {
+  border-top: 5px solid #22543d;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.badge {
+  background-color: #9ae6b4;
+  color: #22543d;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+/* Table css */
+
+.headerTable {
+  color: #fff;
+  background-color: #012d61;
+}
+
+.dataLinks {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5;
+  text-align: "center";
+  background-color: #fdbd2f;
+  box-shadow: 0px 2px 3px #999;
+}
+
+.fa-eye {
+  text-shadow: 1px 6px rgba(255, 0, 0, 0.5);
+}
+/* Selector API Styles */
+.container {
+  background-color: #f5f4f4;
+  display: flexbox;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+/* combo box */
+.dropdown {
+  font-size: 14px;
+  border-radius: 4px;
+  height: 40px;
+  color: #4d5050;
+  width: 200px;
+}
+
+.flex-grid {
+  display: flex;
+  padding: 6px;
+}
+.col {
+  flex: 1;
+}
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.inputSearch {
+  margin-top: 20px;
+}
+
+.updateBtn {
+  background-color: #fdbd2f; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
